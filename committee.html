@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICCCES -2024</title>
+    <link rel="stylesheet" href="./sam1.css" />
+<link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    
+  />
+  <style>
+    * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
+
+/* body {
+  background: var(--light-bg);
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark);
+} */
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 10px;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: hsl(0, 0%, 60%);
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 16px;
+  color: #000;
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px black inset;
+  transition: background 0.4s ease;
+}
+
+.button:hover {
+  background: var(--purple);
+}
+
+.fill-one {
+  background: var(--light-bg);
+}
+
+.fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+        <i class="fa-solid fa-bars" title="Click me!"><span >&nbsp; M e n u</span></i>
+      <!-- <i class="fa-soild fa-bars" ></i> -->
+      <ul>
+        <li><a href="./">Home</a></li> 
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="cfp.html">Call for Papers</a></li>
+        <li><a href="keynote.html">Keynote</a></li>
+        <li><a href="submission.html">Submission</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./#important-dates">Key Dates</a></li>
+      </ul>
+    </div>
+
+    <section class="container committee pb-5 " tyle="background-color: rgba(255, 255, 255, 0.45)">
+      
+      <h3 class="text-center" style="text-decoration: none; text-shadow: 0.7px 0.7px;">Committee</h3>
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Chief Patrons</h4> 
+      <hr />
+   
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/kamal.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. (Dr.) Kamal Ghanshala <br>
+              Chancellor, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India <br />
+            </p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/JOSHI.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Mark Carusso</h3> -->
+              <!-- <p class="user-follow-info">33 Projects</p> -->
+            </div>
+            <p class="description">Prof. (Dr.) R.C Joshi <br />
+              Chancellor, <br />
+              Graphic Era (Deemed to be University), <br />
+              Dehradun, India <br /></p>
+          </div>
+          
+        </div>
+        <!-- <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNTQzNA&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Taylor Green</h3>
+              <p class="user-follow-info">26 Projects</p>
+            </div>
+            <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNjA1MA&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <h3 class="box-title">Isaiah Jian</h3>
+              <p class="user-follow-info">12 Projects</p>
+            </div>
+            <p class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
+          </div>
+        </div> -->
+      </div>
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Patrons</h4> 
+
+      <hr />
+
+    <style>
+      p{
+        font-size: .9pc;
+      }
+    </style>
+  
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/image2.png" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. (Dr.) J. Kumar <br />
+              Pro-Chancellor <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India <br />
+            </p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/Nagaraj.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Mark Carusso</h3> -->
+              <!-- <p class="user-follow-info">33 Projects</p> -->
+            </div>
+            <p class="description">Prof. (Dr.) H. N. Nagaraj <br />
+              Director General, <br />
+              Graphic Era (Deemed to be University), <br />
+              Dehradun, India
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/Sanjay Jasola.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Taylor Green</h3> -->
+              <!-- <p class="user-follow-info">26 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. (Dr.) Sanjay Jasola <br />
+              Vice-Chancellor, <br />
+              Graphic Era (Deemed to be University), <br />
+              Dehradun, India <br />
+            </p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="committeeImages/Gowri Ravi.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Isaiah Jian</h3> -->
+              <!-- <p class="user-follow-info">12 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. (Dr.) R. Gowri <br />
+              Vice-Chancellor, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">General Chair</h4> 
+
+      <hr />
+   
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/SriNivasSingh.png" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. Sri Niwas Singh <br>
+              Director, <br />
+              ABB-IITM Gwalior, <br />
+              Professor(HAG), <br />
+              Dept. of Electrical Engineering, <br />
+              IIT Kanpur, India
+            </p>
+          </div>
+          
+        </div>
+       
+      
+      </div>
+
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Conference Chairs</h4> 
+      <hr />
+     
+
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/image7.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. Dibyahash Bordoloi<br />
+              HoD, Computer Science & Engineering, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India.
+            </p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/vrince vimal.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Mark Carusso</h3> -->
+              <!-- <p class="user-follow-info">33 Projects</p> -->
+            </div>
+            <p class="description">Prof. (Dr.) Vrince Vimal <br />
+              Associate Dean Research, <br />
+              Computer Science & Engineering, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India.
+            </p>
+          </div>
+          
+        </div>
+       
+      </div>
+
+      
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Conference Co-Chairs</h4> 
+      <hr />
+    
+
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/image8.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Mr. Navin Garg<br />
+              Associate Professor,<br />
+              Computer Science & Engineering, <br />
+              Graphic Era Hill University - Dehradun, India <br />
+            </p>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/Nisha Chandran.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Mark Carusso</h3> -->
+              <!-- <p class="user-follow-info">33 Projects</p> -->
+            </div>
+            <p class="description">Dr. Nisha Chandran <br />
+              Assistant Professor, <br />
+              School of Computing, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India.
+            </p>
+          </div>
+          
+        </div>
+       
+      </div>
+
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Convener</h4> 
+
+      <hr />
+      
+
+
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/Mahesh Manchanda.jpeg" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Prof. (Dr.) Mahesh Manchanda <br />
+            Computer Science & Engineering, <br />
+            Graphic Era Hill University, <br />
+            Dehradun, India.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Co-Convener</h4> 
+      <hr />
+      
+      <div class="wrap container">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="./committeeImages/PrateekSrivastva.png" alt="Girl Eating Pizza">
+            <div class="title-flex">
+              <!-- <h3 class="box-title">Prof. (Dr.) Kamal Ghanshala</h3> -->
+              <!-- <p class="user-follow-info">17 Projects</p> -->
+            </div>
+            <p class="description">
+              Dr. Prateek Srivastva <br />
+
+              Associate Professor, <br />
+              Graphic Era Hill University, <br />
+              Dehradun, India
+            </p>
+          </div>
+        </div>
+      </div>
+
+   <div class="lh-lg p-3 rounded ">
+    
+    <h4 style="text-align: left; text-shadow: 0.7px 0.7px;">Technical Program Chairs</h4>  <hr>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Prof. (Dr.) Vrince Vimal, Graphic Era Hill University, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Messaouda Bouneb, El Arbi Ben M'hidi University, Algeria.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Vincenzo Piuri, University of Milan, Italy.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Elmootazbellah (Mootaz) N. Elnozahy, King Abdullah University of Science and Technology, Saudi Arabia.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Maria Ganzha, Warsaw University of Technology, Poland.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Nasimuddin, Institute for Infocomm Research Singapore, Singapore.</p>
+
+    
+    <h4 class="mt-4" style="text-align: left; text-shadow: 0.7px 0.7px;">Technical Program Committee</h4>  <hr>
+
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span> Dr. Valentina Emilia Balas, University of Arad, Romania.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Anastasios (Tasos) Doulamis, National Technical University of Athens, Athens, Greece. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Mario O. Oliveira, National University of Misiones –UnaM, Argentina.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Nasimuddin, Institute for Infocomm Research A*STAR, Singapore.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. R Dhaya, King Khalid University, Abha, Kingdom of Saudi Arabia.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Lee Chien Sing, Sunway University, Malaysia. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Chandrasekar Vuppalapati, San Jose State University, USA. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Álvaro Rocha, AISTI & University of Coimbra, Portugal.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Hedayat Omidvar,  National Iranian Gas Company, Tehran. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Arijit Karati, National Sun Yat-sen University, Taiwan.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. João Manuel R. S. Tavares, Universidade do Porto (FEUP), Portugal. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Abdulellah A. Alaboudi, Shaqra university, Saudi Arabia.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Ke-Lin Du, Concordia University, Montreal, Canada.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Bhaskar Mondal, National Institute of Technology, Patna, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. K L V Sai Prakash, National Institute of Technology, Warangal.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Nayana Shetty, Nmamit, Nitte, Udupi District, Karnataka, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Bhaskar Mandal, National Institute of Technology, Jamshedpur, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Abhinav Tomar, Indian Institute of Technology, IIT(ISM) Dhanbad, Dhanbad, India. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Aashish Kumar Bohre, National Institute of technology, Durgapur, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Anshul Agarwal, National Institute of Technology, Delhi, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. B Surendiran, National Institute of Technology, Puducherry, Tiruvettakudy. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Omkar Singh Kushwaha, Indian Institute of Technology, Madras, Chennai, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. G.Jayalakshmi, V.R. Siddhartha Engineering College, Vijayawada, Andhrapradesh, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Adithya Rangan. CK, Design Engineer in Innovative Logic Inc., Bangalore.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Sanjoy Mondal, A.K.Choudhury School Of I.T, University Of Calcutta.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. P. Malyadri, Rayalaseema University, Kurnool (DT), Andhra Pradesh, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Ankur Singh Bist, Chief Ai Scientist At Towards Blockchain, India. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. A. Arul Lawrence Selvakumar, Rajiv Gandhi Institute of Technology, India Bangalore, India. </p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Parikshit N. Mahalle, Smt. Kashibai Navale College of Engineering, Off Sinhgad Road, Vadgaon (Bk), Pune, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Dinesh Sharma, GLA University, Mathura (U.P), India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. C.Annadurai, SSN College of Engineering, Old Mahabalipuram Road, Kalavakkam, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. A A Bazil Raj, Ministry Of Defence, Government Of India,Pune, Maharashtra, India.</p>
+    <p><span style= "color:forestgreen;  font-size: 1pc;">&#x269B;</span>  Dr. Ramji Tiwari, VIT University, Vellore, Tamil Nadu, India. </p>
+   </div>
+    </section>
+
+
+
+  </div>
+ 
+
+      
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+      
+    ></script>
+    <script>
+      $("i").click(function () {
+        $("ul").toggleClass("open");
+      });
+    </script>
+    
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
