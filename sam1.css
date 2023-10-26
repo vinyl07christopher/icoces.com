@@ -1,65 +1,82 @@
+ul {
+  list-style: none;
+  padding: 0;
+  /* background:#ff7377; */
+  background: #fff;
+  max-height: 0;
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  visibility: hidden;
+  border-radius: 3px;
+  opacity: 0;
+  transform: rotate(180deg);
+  width: 200px !important;
+}
 
+li a {
+  padding: 8px 0;
+  display: block;
+  transition: 0.25s;
+  color: black;
+}
+li a:hover {
+  /* background: #ff7377; */
+  /* color:white; */
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-    /* background:#ff7377; */
-    background: #fff;
-    max-height: 0;
-    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-    overflow: hidden;
-    visibility: hidden;
-    border-radius:3px;
-    opacity:0;
-    transform:rotate(180deg);
-    width: 200px !important;
+a {
+  /*color:#fff !important;*/
+  /* text-transform:uppercase; */
+  text-decoration: none;
+  text-decoration: none !important;
+}
+i {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 3px;
+  /* color: #ff7377; */
+  transition: 0.25s;
+  animation: 1.25s bounce infinite;
+}
+i:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.95);
+  animation-play-state: paused;
+}
+ul.open {
+  max-height: 480px;
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(0);
+}
+/* animation */
+@keyframes bounce {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 
-  }
-  
-  li a {
-    padding:12px 0;
-    display: block;
-    transition:.25s;
-    color:black;
-    
-    
-  }
-  li a:hover {
-    /* background: #ff7377; */
-    /* color:white; */
-  }
-  
-  a {
-    /*color:#fff !important;*/
-    /* text-transform:uppercase; */
-    text-decoration: none;
-    text-decoration: none !important;
-  }
-  i {
-    padding:20px;
-    background: rgba(255,255,255,.75);
-    border-radius:3px;
-    /* color: #ff7377; */
-    transition:.25s;
-    animation: 1.25s bounce infinite;
-  }
-  i:hover {
-    cursor:pointer;
-    background: rgba(255,255,255,.95);
-    animation-play-state: paused;
+#pub-his-btn {
+  position: relative;
+}
 
-  }
-  ul.open {
-    max-height: 480px;
-    visibility: visible;
-    opacity:1;
-    transform:rotate(0);
-  }
-  /* animation */
-  @keyframes bounce {
-    0% {margin-top:0;}
-    50% {margin-top:-15px; margin-bottom:15px;}
-    100% {margin-top:0;}
-  }
-  
-  
+#pub-his-menu {
+  display: none;
+  position: absolute;
+}
+
+#pub-his-btn:hover #pub-his-menu {
+  display: block;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px #0006;
+  text-align: center;
+  left: 1cm;
+  width: 100px;
+  top: 0.5cm;
+}
