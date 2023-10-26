@@ -61,22 +61,3 @@ ul.open {
     margin-top: 0;
   }
 }
-
-#pub-his-btn {
-  position: relative;
-}
-
-#pub-his-menu {
-  display: none;
-  position: absolute;
-}
-
-#pub-his-btn:hover #pub-his-menu {
-  display: block;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 6px #0006;
-  text-align: center;
-  left: 1cm;
-  width: 100px;
-  top: 0.5cm;
-}
